@@ -3,25 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Interactive JSON Example</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    #output { margin-top: 20px; font-weight: bold; }
-  </style>
+  <link rel="stylesheet" href="estilo.css">
+    <!-- Vinculamos el archivo JavaScript externo -->
+  <script src="script.js"></script>
 </head>
 <body>
   <h1>User Info</h1>
 
   <!-- Dropdown populated from JSON -->
-  <label for="userSelect">Choose a user:</label>
+  <label for="userSelect">Escoja un usuario:</label>
   <select id="userSelect"></select>
 
   <!-- Button to show selected user info -->
-  <button id="showBtn">Show Info</button>
+  <button id="showBtn">Mostrar Info</button>
 
   <!-- Output area -->
   <div id="output"></div>
-
-  <!-- Link to external JS -->
-  <script src="script.js"></script>
 </body>
 </html>

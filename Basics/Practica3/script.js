@@ -18,7 +18,7 @@ fetch('data.json')
     button.addEventListener("click", () => {
       const selectedIndex = select.value;
       const user = users[selectedIndex];
-      output.textContent = `${user.name} is ${user.age} years old and lives in ${user.city}.`;
+      output.textContent = `${user.name} tiene ${user.age} años de edad y vive en ${user.city}.`;
     });
   })
   .catch(error => console.error("Error loading JSON:", error));
