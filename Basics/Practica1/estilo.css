@@ -1,0 +1,10 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: cornflowerblue;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+      color: darkblue;
+    }
