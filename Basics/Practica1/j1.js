@@ -15,4 +15,16 @@ document.addEventListener("DOMContentLoaded", function() {
     alert(texto);
     //resultado.innerText = "Texto ingresado: " + texto;
   });
+
+// Evento al presionar CTRL + M
+document.addEventListener("keydown", function(event) {
+  // Verifica si se mantiene presionado CTRL y la tecla es "m" o "M"
+  if (event.ctrlKey && event.key.toLowerCase() === "m") {
+    let texto = textbox.value;
+    alert(texto);
+    //resultado.innerText = "Texto ingresado: " + texto;
+  }
+});
+
+
 });
