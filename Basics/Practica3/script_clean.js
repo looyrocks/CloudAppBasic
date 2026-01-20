@@ -1,26 +1,6 @@
 // Fetch JSON data and populate dropdown
 fetch('data.json')
-//función callback que se ejecuta cuando la sentencia anterior se resuelve.
-/*
- .then() es un método de los objetos Promise que permite
-  manejar el resultado de una operación asíncrona: 
-  ejecuta una función cuando la promesa se resuelve con éxito 
-  y opcionalmente otra cuando se rechaza. 
-  Además, devuelve una nueva promesa, 
-  lo que permite encadenar múltiples operaciones de forma ordenada.
-
-  onFulfilled: función que recibe el valor con el que se resolvió la promesa.
-  onRejected: función que recibe el motivo del rechazo (error).
-
-*/ 
-
-
-.then(
-    function(response) { 
-      return response.json(); 
-    }
-    )
-
+  .then(response => response.json())
   .then(users => {
     const select = document.getElementById("userSelect");
     const output = document.getElementById("output");
