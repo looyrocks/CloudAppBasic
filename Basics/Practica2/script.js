@@ -36,10 +36,13 @@ fetch('datos.json')
  /*sirve para convertir la respuesta HTTP en un objeto JavaScript.*/
 
 .then(function(users) { 
-    alert("Datos cargados:", users); 
+   // alert("Datos cargados:", users); 
     //alert(JSON.stringify(users, null, 2));
     //alert(JSON.stringify(users [0], null, 2));
     //alert(JSON.stringify(users [0], ["age"], 16));
+
+    let name = users[0].name;
+    alert("Datos cargados:", name); 
   })
   /*
   users[0] → el objeto que quieres convertir a texto.
